@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid template 2.0</title>
+    <style>
+        .container{
+            background-color: black;
+            border: 2px solid blue;
+            height: 90vh;
+            display: grid;
+            grid-template-areas: 'jhon_doe jane_doe mike_ross dan_star';
+            justify-content: start;
+            gap: 1vw;
+            box-shadow: 1.2vw 1.2vw 3vh yellow;
+        }
+        img{
+            width: 23vw;
+            height: 30vh;
+        }
+        .container div{
+            background-color: white;
+        }
+       
+        .item1{
+            grid-area: jhon_doe;
+            height: 70vh;
+            margin-top: 3vh;
+            box-shadow:0.5vw 0.5vw 1.5vh rgb(60, 207, 236); 
+            
+        }
+        .item2{
+            grid-area: jane_doe;
+            height: 70vh;
+            margin-top: 3vh;
+            box-shadow:0.5vw 0.5vw 1.5vh rgb(60, 207, 236); 
+        }
+        .item3{
+            grid-area: mike_ross;
+            height: 70vh;
+            margin-top: 3vh;
+            box-shadow:0.5vw 0.5vw 1.5vh rgb(60, 207, 236); 
+        }
+        .item4{
+            grid-area: dan_star;
+            height: 70vh;
+            margin-top: 3vh;
+            box-shadow:0.5vw 0.5vw 1.5vh rgb(60, 207, 236); 
+        }
+        .text{
+            font-size: 1.5em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .box{
+            height: 5vh;
+            text-align: center;
+            font-size: x-large;
+            background-color: lightgray!important;
+            margin: 4px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <img src="./john_doe.jpg" alt="image not found">
+            <div class="text">John Doe <br><br>
+                <span style="color: grey;">CEO & founder</span><br><br>
+                Phasellus eget enim eu lectus <br> faucibus vestibulum. Suspendisse <br> sodales pellentesque elementum.
+            </div>
+            <div class="box" >Contact</div>
+        </div>
+        <div class="item2">
+            <img src="./jane_doe.jpg" alt="image not found">
+            <div class="text">Jane Doe <br><br>
+            <span style="color: grey;">Architect</span><br><br>
+                Phasellus eget enim eu lectus <br> faucibus vestibulum. Suspendisse <br> sodales pellentesque elementum.
+            </div> 
+            <div class="box" >Contact</div>
+        </div>
+
+        <div class="item3">
+            <img src="./mike_ross.jpg" alt="image not found">
+            <div class="text">Mike Ross<br><br>
+            <span style="color: grey;">Architect</span><br><br>
+                Phasellus eget enim eu lectus <br> faucibus vestibulum. Suspendisse <br> sodales pellentesque elementum.
+            </div> 
+            <div class="box" >Contact</div>
+            
+        </div>
+        <div class="item4">
+            <img src="./nigga.jpg" alt="image not found">
+            <div class="text">Dan Star
+                <br><br>
+            <span style="color: grey;">Architect</span><br><br>
+                Phasellus eget enim eu lectus <br> faucibus vestibulum. Suspendisse <br> sodales pellentesque elementum.
+            </div>
+            <div class="box" >Contact</div>
+            
+        </div>
+    </div>
+</body>
+</html>

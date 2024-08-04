@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid templates</title>
+    <style>
+        .container{
+            border: 10px solid blue;
+            height: 90vh;
+            background-color: black;
+            display: grid;
+            grid-template-areas: 'pic_1 pic_2 pic_3 pic_4'
+            'pic_5 pic_6 pic_7 pic_8';
+            place-content: center;
+            gap: 1vw;
+            position: relative;
+            box-shadow: 10px 10px 10px aqua;
+
+        }
+        img{
+            height: 30vh;
+            width: 23vw;
+        }
+        
+        .item1{
+            grid-area: pic_1;
+            box-shadow:10px 10px 10px yellow ;
+        }
+        .item2{
+            grid-area: pic_2;
+            box-shadow:10px 10px 10px yellow ;
+        }
+        .item3{
+            grid-area: pic_3; 
+            box-shadow:10px 10px 10px yellow ;
+        }
+        .item4{
+            grid-area: pic_4;
+            box-shadow:10px 10px 10px yellow ;
+        }
+        .item5{
+            grid-area: pic_5;
+            box-shadow:10px 10px 10px yellow ;
+        }
+        .item6{
+            grid-area: pic_6;
+            box-shadow:10px 10px 10px yellow ;
+        }
+        .item7{
+            grid-area: pic_7;
+            box-shadow:10px 10px 10px yellow ;
+        }
+        .item8{
+            grid-area: pic_8;
+            box-shadow:10px 10px 10px yellow ;
+        }
+        .a,.b,.c,.d,.e,.f,.g,.h{
+            height: 5vh;
+            border: 2px solid;
+            position:relative;
+            top: 6.2vh;
+            width: 10vw;
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            font-size: 1.5em;
+        }
+        
+        .h:hover{
+            color: yellow;
+        }
+        .a:hover{
+            color: yellow;
+        }
+        .b:hover{
+            color: yellow;
+        }
+        .c:hover{
+            color: yellow;
+        }
+        .d:hover{
+            color: yellow;
+        }
+        .e:hover{
+            color: yellow;
+        }
+        .f:hover{
+            color: yellow;
+        }
+        .g:hover{
+            color: yellow;
+        }
+        .h:active{
+            background-color: yellow;
+        }
+        .a:active{
+            background-color: yellow;
+        }
+        .b:active{
+            background-color: yellow;
+        }
+        .c:active{
+            background-color: yellow;
+        }
+        .d:active{
+            background-color: yellow;
+        }
+        .e:active{
+            background-color: yellow;
+        }
+        .f:active{
+            background-color: yellow;
+        }
+        .g:active{
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <div class="a">Summer house</div>
+            <img src="./poc_1.jpg" alt="image not found">
+        </div>
+        <div class="item2">
+            <div class="b">Brick house</div>
+            <img src="./pic_2.jpg" alt="image not found">
+            
+        </div>
+        <div class="item3">
+            <div class="c">Renovated</div>
+            <img src="./pic_3.jpg" alt="image not found">
+            
+        </div>
+        <div class="item4">
+            <div class="d">Barn house</div>
+            <img src="./pic_4.jpg" alt="image not found">
+            
+        </div>
+        <div class="item5">
+            <div class="e">Summer house</div>
+            <img src="./pic_5.jpg" alt="image not found">
+            
+        </div>
+        <div class="item6">
+            <div class="f">Brick house</div>
+            <img src="./pic_6.jpg" alt="image not found">
+            
+        </div>
+        <div class="item7">
+            <div class="g">Renovated</div>
+            <img src="./pic_7.jpg" alt="image not found">
+            
+        </div>
+        <div class="item8">
+            <div class="h">Barn house</div>
+            <img src="./pic_8.jpg" alt="image not found">
+            
+        </div>
+    </div>
+</body>
+</html>
